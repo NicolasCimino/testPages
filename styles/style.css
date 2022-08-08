@@ -1,0 +1,193 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+   }
+   main {
+    flex-grow: 1;
+   }
+
+/******** nav ************/
+
+nav{
+
+    background-color: rgb(1, 6, 10); 
+    width:100vw;
+
+}
+
+nav li
+{
+    list-style: none;
+    justify-items:flex-start;
+    padding: 10px 40px 10px;
+}
+
+nav ul{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav li a
+{
+    text-decoration: none;
+    color: rgb(215, 236, 250);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+
+/*********** footer **********************/
+footer{
+    background-color: rgb(1, 6, 10); 
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+footer li
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+footer li a
+{
+    text-decoration: none;
+    color: rgb(215, 236, 250);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+
+
+/*********** selectores de etiqueta **********************/
+
+li a:hover{
+    font-weight: 900;
+    color: rgb(135, 207, 255);
+    font-size: 17px;
+}
+
+h1
+{
+    color: rgba(148, 170, 245, 0.936);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: xx-large;
+    text-align: center;
+}
+
+h2
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: x-large;
+    color: rgb(155, 179, 255);
+    text-align: center;
+}
+
+h3
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
+    color: rgb(155, 179, 255);
+    text-align: center;
+}
+
+p
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:large;
+    margin-top: 15px;
+    word-spacing: 5px;
+    color: rgb(155, 179, 255);
+    
+}
+
+
+/************* Clases **************/
+.fondo
+{
+    background-image:url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: rgb(215, 236, 250);
+    padding: 30px 20px 50px;
+}
+
+.icono
+{
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s ease-in-out;
+}
+nav .icono:hover
+{
+    width: 45px;
+    height: 45px;
+}
+
+.borde{
+    border: 2px solid rgba(255, 255, 186, 0.301);
+    border-radius: 5%;
+}
+
+.texto{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/*********** media ***************/
+
+    @media screen and (max-width: 1024px) {
+        .texto{
+                font-size: 18px;
+                line-height: 22px;
+            }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .texto{
+            font-size: 16px;
+            line-height: normal;
+            }  
+        .icono{
+            width: 30px;
+            height: 30px;
+            transition: all 0.2s ease-in-out;
+            } 
+        nav .icono:hover{
+            width: 35px;
+            height: 35px;
+            }
+    }
+    
+    @media screen and (max-width: 320) {
+        .texto{
+            font-size:14px;
+        }
+    }
+

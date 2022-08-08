@@ -1,0 +1,74 @@
+.sucursal1{
+    grid-area: suc-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.sucursal2{
+    grid-area: suc-2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sucursal3{
+    grid-area: suc-3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sucursal4{
+    grid-area: suc-4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sucursales{
+    display: grid;
+    grid-template-areas:
+        "suc-1  suc-2"
+        "suc-3  suc-4";
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 40px;
+}
+
+.imgSucursal{
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .sucursales{
+        gap: 35px;
+        padding: 25px;
+    }
+    .imgSucursal{
+        width: 320px;
+        height: 250px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sucursales{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .imgSucursal{
+        width:100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .sucursales{     
+        padding: 10px;
+    }
+    .imgSucursal{
+        margin-top: 10px;
+    }
+}

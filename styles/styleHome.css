@@ -1,0 +1,82 @@
+/*********** grid ***********/
+.novedadesGrid{
+    grid-area: novedades;
+}
+.eventosGrid{
+    grid-area: eventos;   
+}
+
+.home{
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas:
+    "novedades  "
+    "eventos    ";
+    grid-template-columns: 100%;
+    gap: 50px;
+}
+/**************/
+
+.ajusteAncho{
+    width: 90%;
+   
+  }
+
+  h2{
+    text-align: left;
+  }
+
+  h3{
+    margin-bottom: 10px;
+  }
+
+.eventos{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.novedades{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.caja{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width:300px;
+    padding: 10px;
+    transition: all 0.1s ease-in-out;
+    align-items: center;
+}
+
+.caja:hover{
+    border: 3px solid rgba(255, 255, 186, 0.689);
+    border-radius: 5%;
+}
+
+/********** media******/
+
+
+@media screen and (max-width:768px) {
+    .eventos{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .novedades{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
