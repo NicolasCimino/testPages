@@ -18,13 +18,13 @@
     grid-area: texto-1;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .textoHistoria-2{
     grid-area: texto-2;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .anchoImg{
     width:90%;
@@ -39,11 +39,14 @@
     "texto-2    texto-2     img-2";
     grid-template-columns: 40%  auto 40%;
     gap: 20px;
+    padding-left: 20px;
+ 
 }
 /********************************************/
 h1{
     text-align: justify;
     margin-bottom: 30px;
+    padding-left: 10px;
 }
 
 
@@ -58,7 +61,7 @@ h1{
         grid-template-columns: 35%  auto 35%;
     }
     .anchoImg{
-        width: 85%;
+        width: 90%;
 
     }
 }

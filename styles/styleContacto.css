@@ -1,0 +1,16 @@
+textarea{
+    height: 100px;
+} 
+select{
+    width: fit-content;
+}
+
+label{
+    color: rgb(147, 176, 223);
+    font-weight: bold;
+}
+
+.boton{
+    width: fit-content;
+}
+

@@ -17,9 +17,9 @@ body {
 
 nav{
 
-    background-color: rgb(1, 6, 10); 
-    width:100vw;
-
+    background: rgb(1,6,10);
+    background: linear-gradient(45deg, rgba(1,6,10,1) 50%, rgba(5,26,45,1) 75%, rgba(6,34,56,1) 95%);
+    width: 100vw;
 }
 
 nav li
@@ -38,7 +38,7 @@ nav ul{
     align-items: center;
     margin: 0;
     padding-left: 0;
-}
+} 
 
 nav li a
 {
@@ -50,7 +50,9 @@ nav li a
 
 /*********** footer **********************/
 footer{
-    background-color: rgb(1, 6, 10); 
+    background: rgb(1,6,10);
+    background: linear-gradient(45deg, rgba(1,6,10,1) 50%, rgba(5,26,45,1) 75%, rgba(6,34,56,1) 95%);
+    width: 100vw;
 }
 
 footer ul{
@@ -87,40 +89,40 @@ li a:hover{
 
 h1
 {
-    color: rgba(148, 170, 245, 0.936);
+    color: rgb(93, 135, 234); 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
-    font-size: xx-large;
+    font-size: 35px;
     text-align: center;
 }
 
 h2
 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
-    font-size: x-large;
-    color: rgb(155, 179, 255);
+    font-size: 30px;
+    color: rgb(93, 135, 234); 
     text-align: center;
 }
 
 h3
 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
-    font-size: large;
-    color: rgb(155, 179, 255);
+    font-size: 26px;
+    color: rgb(93, 135, 234); 
     text-align: center;
 }
 
 p
 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
-    font-size:large;
+    font-size: 18px;
     margin-top: 15px;
     word-spacing: 5px;
     color: rgb(155, 179, 255);
@@ -134,8 +136,8 @@ p
     background-image:url(../imagenes/fondo.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    color: rgb(215, 236, 250);
     padding: 30px 20px 50px;
+    width: 100vw;
 }
 
 .icono
@@ -156,8 +158,8 @@ nav .icono:hover
 }
 
 .texto{
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 38px;
 }
 
 /*********** media ***************/
@@ -165,11 +167,33 @@ nav .icono:hover
     @media screen and (max-width: 1024px) {
         .texto{
                 font-size: 18px;
-                line-height: 22px;
+                line-height: 26px;
             }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 26px;
+    }
+    h3{
+        font-size: 22px;
+    }
     }
     
     @media screen and (max-width: 768px) {
+        h1{
+            font-size: 38px;
+        }
+        h2{
+            font-size: 24px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+        }
+        
         .texto{
             font-size: 16px;
             line-height: normal;
